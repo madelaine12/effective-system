@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="mycss_web.css" media="screen">
+    <link rel="stylesheet" href="mycss_tablet.css" media="(max-width: 768px)">
+
+    <style>
+        h2 {
+            color: #7CBCEF; 
+        }
+
+        .profile-image {
+    width: 100%;
+    max-width: 250px;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+
+        .section-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin-top: 40px;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #7CBCEF !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1 style="font-size: 28px;">Welcome to My Page!</h1> 
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link" href="#favorites">Favorites</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="about" class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-heading">About Me</h2>
+                <p><strong>Name:</strong> Madelaine Starke</p>
+                <p><strong>Major:</strong> Computer Science</p>
+            </div>
+            <div class="col-md-3">
+                <img src="https://raw.githubusercontent.com/madelaine12/effective-system/refs/heads/main/Intern.jfif" class="profile-image" alt="Profile Picture">
+        </div>
+    </div>
+
+    <div id="education" class="container mt-5">
+        <h2 class="section-heading">Education</h2>
+        <p>As of right now, I only have a high school diploma, but I am one semester away from receiving a Bachelor's degree in Computer Science.</p>
+    </div>
+
+    <div id="experience" class="container mt-5">
+        <h2 class="section-heading">Experience</h2>
+        <ul>
+            <li>I have had two tech internships at the same company.</li>
+            <li>I worked on various projects throughout my time at St. John’s.</li>
+            <li>I have worked on personal projects in my free time to help practice my programming skills.</li>
+        </ul>
+    </div>
+
+    <div id="skills" class="container mt-5">
+        <h2 class="section-heading">Programming Skills</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Experience Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Java</td>
+                    <td>Above Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="interests" class="container mt-5">
+        <h2 class="section-heading">Interests</h2>
+        <p>My interests include exercising, cooking, and art.</p>
+    </div>
+
+    <div id="favorites" class="container mt-5">
+        <h2 class="section-heading">Favorites</h2>
+        <p>My favorite song is The Less I Know the Better by Tame Impala, my favorite show is Gossip Girl, and my favorite movie is How to Lose a Guy in 10 Days.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EiHLFK7Fo0s?si=YwMZCqKM62dZuY8L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="projects" class="container mt-5">
+        <h2 class="section-heading">Projects</h2>
+        <ol>
+            <li>Project 1: <a href="C:\Users\Madelaine\OneDrive - St. John's University\Documents\GitHub\effective-system\Assignment1\Milestone1.html" target="_blank">Milestone 1</a></li>
+            <li>Project 1: <a href="C:\Users\Madelaine\OneDrive - St. John's University\Documents\GitHub\effective-system\Assignment1\Milestone2\Milestone_1.html" target="_blank">Milestone 2</a></li>
+            <li>Project 1: <a href="C:\Users\Madelaine\OneDrive - St. John's University\Documents\GitHub\effective-system\Assignment1\Milestone3\Milestonee1.html" target="_blank">Milestone 3</a></li>
+        </ol>
+    </div>
+
+    <div id="contact" class="container mt-5">
+        <h2 class="section-heading">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="phone" class="form-control" id="phone" name="phone">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
