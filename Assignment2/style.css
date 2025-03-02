@@ -1,0 +1,9 @@
+body {
+    max-width: 600px;
+    margin: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
